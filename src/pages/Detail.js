@@ -9,7 +9,7 @@ class Detail extends React.Component {
   };
 
   componentWillMount() {
-    ajax.get('https://api.github.com/repos/hexagon6/wave/commits')
+    ajax.get('https://api.github.com/repos/hexagon6/react-course/commits')
       .end((error, response) => {
         if (!error && response) {
           console.log(response.body);
